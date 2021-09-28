@@ -1,4 +1,4 @@
-# Docker for Snowpark app
+# Docker code example for Snowpark app
 
 This Docker image helps you to run SQL andd show the result using Snowpark. 
 

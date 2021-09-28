@@ -9,7 +9,7 @@ object Main extends App {
   val warehouse = sys.env.get("WAREHOUSE").getOrElse("COMPUTE_WH")
   val db = sys.env.get("DB").getOrElse("DEMO_DB")
   val schema = sys.env.get("SCHEMA").getOrElse("INFORMATION_SCHEMA")
-  val sql = sys.env.get("SQL").getOrElse("SELECT * FROM views")
+  val sql = sys.env.get("SQL").getOrElse("select * from views")
   val configs = Map(
       "URL" -> url,
       "USER" -> user,

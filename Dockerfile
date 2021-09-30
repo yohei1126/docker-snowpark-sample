@@ -3,7 +3,7 @@ COPY . /build
 WORKDIR /build
 RUN sbt stage
 
-FROM openjdk:11.0.12-slim
+FROM openjdk:11.0.12-jre
 WORKDIR /root/
 COPY --from=builder /build/target/universal/stage .
 CMD ["./bin/snowpark-docker-sample"]
